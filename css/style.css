@@ -41,12 +41,20 @@ body {
 #menu {
   display: none; }
 
-@media screen and (max-width: 768px) {
-  .main-img {
-    margin-top: 50px; }
+.footer {
+  margin-bottom: 100px; }
 
-  .main-img-bottom {
-    margin-top: 0px; }
+@media screen and (max-width: 768px) {
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative; }
+
+  .main-img {
+    margin-top: -150px; }
+
+  .main-slider {
+    margin-top: 50px; }
 
   .nav {
     display: none; }

@@ -1,5 +1,6 @@
 var theToggle = document.getElementById('toggle');
 
+
 // based on Todd Motto functions
 // http://toddmotto.com/labs/reusable-js/
 
@@ -36,7 +37,31 @@ function toggleClass(elem, className) {
     }
 }
 
+
+
+
+
 theToggle.onclick = function() {
+
+    if ( $('#toggle').hasClass('') ){
+
+        $(".main-img").removeClass("main-img").addClass("main-slider");
+    }
+    if ( $('#toggle').hasClass('on') ){
+
+        $(".main-slider").removeClass("main-slider").addClass("main-img");
+    }
+
     toggleClass(this, 'on');
     return false;
+
 }
+
+
+
+
+
+
+
+
+

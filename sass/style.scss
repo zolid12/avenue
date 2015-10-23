@@ -1,5 +1,6 @@
 body{
   box-sizing: border-box;
+
 }
 .logo{
   margin-top: 55px;
@@ -59,15 +60,29 @@ body{
   display: none;
 }
 
+
+
+.footer{
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 768px) {
 
 
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
   .main-img{
+    margin-top: -150px;
+  }
+
+  .main-slider{
     margin-top: 50px;
   }
-  .main-img-bottom{
-    margin-top: 0px;
-  }
+
 
   .nav {
     display: none;
