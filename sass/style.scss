@@ -60,6 +60,18 @@ body{
   display: none;
 }
 
+.main-img-after {
+
+  p {
+    color: lightslategray;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+
+
+}
+
 
 
 .footer{
@@ -78,13 +90,13 @@ body{
 
 
   .main-img{
-    margin-top: -150px;
+    margin-top: -230px;
     position: relative;
 
   }
 
   .main-img-after{
-    margin-top: -150px;
+    margin-top: -230px;
     -webkit-animation: slideup 1s   normal ease-out;
     animation: slideup 1s  normal ease-out;
   }
@@ -94,7 +106,7 @@ body{
       margin-top: 50px;
     }
     100% {
-      margin-top: -150px;
+      margin-top: -230px;
     }
   }
 
@@ -103,7 +115,7 @@ body{
       margin-top: 50px;
     }
     100% {
-      margin-top: -150px;
+      margin-top: -230px;
     }
   }
 
@@ -124,7 +136,7 @@ body{
   }
   @-webkit-keyframes slidedown {
     0% {
-      margin-top:-150px;
+      margin-top:-230px;
     }
     100% {
       margin-top: 50px;
@@ -132,7 +144,7 @@ body{
   }
   @keyframes slidedown {
     0% {
-      margin-top:-150px;
+      margin-top:-230px;
     }
     100% {
       margin-top: 50px;
@@ -246,7 +258,7 @@ body{
     color: #999;
     width: 130px;
     padding: 15px;
-    margin: auto;
+    margin: 50px auto;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     text-align: center;
     background: white;
