@@ -55,6 +55,11 @@ body {
 
   .main-slider {
     margin-top: 50px; }
+    .main-slider p {
+      color: lightslategray;
+      font-weight: 200;
+      font-size: 0.8rem;
+      margin-top: 15px; }
 
   .nav {
     display: none; }
