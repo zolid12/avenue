@@ -1,0 +1,139 @@
+body {
+  box-sizing: border-box; }
+
+.logo {
+  margin-top: 55px;
+  font-size: 40px;
+  font-weight: bold; }
+
+.nav {
+  margin-top: 30px; }
+  .nav .nav-pills .nav-link {
+    border-radius: 0px; }
+  .nav ul li a {
+    color: lightslategray;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 1px solid white;
+    font-weight: 200;
+    letter-spacing: 2px; }
+  .nav ul li a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+    letter-spacing: 2px; }
+
+.main-img {
+  margin-top: 150px; }
+  .main-img p {
+    color: lightslategray;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-top: 15px; }
+
+.main-img-bottom {
+  margin-top: 10px; }
+
+#menu {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .main-img {
+    margin-top: 50px; }
+
+  .main-img-bottom {
+    margin-top: 0px; }
+
+  .nav {
+    display: none; }
+
+  .logo {
+    display: inline-block; }
+
+  /* Important styles */
+  #toggle {
+    display: inline-block;
+    width: 28px;
+    height: 30px;
+    margin: 72px 15px 0 0;
+    float: right; }
+
+  #menu {
+    display: block; }
+
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px; }
+
+  #toggle span:after {
+    top: 9px; }
+
+  #toggle span {
+    position: relative;
+    display: block; }
+
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: lightslategray;
+    transition: all 0.4s;
+    backface-visibility: hidden; }
+
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent; }
+
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px); }
+
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px); }
+
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible; }
+
+  /* menu appearance*/
+  #menu {
+    position: relative;
+    color: #999;
+    width: 130px;
+    padding: 15px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    background: white;
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+    letter-spacing: 4px; }
+
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 85px;
+    content: "";
+    display: block; }
+
+  ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0; }
+
+  li a {
+    padding: 5px;
+    color: lightslategray;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 1px solid white;
+    text-decoration: none !important; }
+
+  li a:hover,
+  li a:focus {
+    color: black;
+    border-bottom: 1px solid black; } }
+/* demo styles */
