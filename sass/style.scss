@@ -75,6 +75,14 @@ body{
     position: relative;
   }
 
+
+
+  .main-img{
+    margin-top: -150px;
+    position: relative;
+
+  }
+
   .main-img-after{
     margin-top: -150px;
     -webkit-animation: slideup 1s   normal ease-out;
@@ -97,12 +105,6 @@ body{
     100% {
       margin-top: -150px;
     }
-  }
-
-  .main-img{
-    margin-top: -150px;
-    position: relative;
-
   }
 
 
@@ -165,9 +167,12 @@ body{
     position: absolute;
     left: 0;
     top: -9px;
+
   }
   #toggle span:after {
     top: 9px;
+
+
   }
   #toggle span {
     position: relative;
@@ -196,9 +201,44 @@ body{
     transform: rotate(-45deg) translate(7px, -8px);
   }
   #toggle.on + #menu {
+
     opacity: 1;
     visibility: visible;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
   }
+
+  .toggleFadeOut{
+    -webkit-animation: fadeout 1.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeout 1.5s; /* Firefox < 16 */
+    -ms-animation: fadeout 1.5s; /* Internet Explorer */
+    -o-animation: fadeout 1.5s; /* Opera < 12.1 */
+    animation: fadeout 1.5s;
+  }
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  /* Firefox < 16 */
+  @-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+
 
   /* menu appearance*/
   #menu {
@@ -212,7 +252,6 @@ body{
     background: white;
     /* just for this demo */
     opacity: 0;
-    visibility: hidden;
     transition: opacity .4s;
     letter-spacing: 4px;
   }

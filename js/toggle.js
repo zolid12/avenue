@@ -48,7 +48,7 @@ theToggle.onclick = function() {
         $(".main-img").removeClass("main-img").addClass("main-slider");
     }
     if ( $('#toggle').hasClass('on') ){
-
+        $("#menu").addClass("toggleFadeOut");
         $(".main-slider").removeClass("main-slider").addClass("main-img main-img-after");
     }
 
