@@ -49,7 +49,7 @@ theToggle.onclick = function() {
     }
     if ( $('#toggle').hasClass('on') ){
 
-        $(".main-slider").removeClass("main-slider").addClass("main-img");
+        $(".main-slider").removeClass("main-slider").addClass("main-img main-img-after");
     }
 
     toggleClass(this, 'on');

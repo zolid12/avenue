@@ -75,12 +75,12 @@ body{
     position: relative;
   }
 
-  .main-img{
+  .main-img-after{
     margin-top: -150px;
-    position: relative;
     -webkit-animation: slideup 1s   normal ease-out;
     animation: slideup 1s  normal ease-out;
   }
+
   @-webkit-keyframes slideup{
     0% {
       margin-top: 50px;
@@ -89,6 +89,7 @@ body{
       margin-top: -150px;
     }
   }
+
   @keyframes slidedup {
     0% {
       margin-top: 50px;
@@ -97,6 +98,13 @@ body{
       margin-top: -150px;
     }
   }
+
+  .main-img{
+    margin-top: -150px;
+    position: relative;
+
+  }
+
 
   .main-slider{
 
