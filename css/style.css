@@ -51,16 +51,42 @@ body {
     position: relative; }
 
   .main-img {
-    margin-top: -150px; }
+    margin-top: -150px;
+    position: relative;
+    -webkit-animation: slideup 1s   normal ease-out;
+    animation: slideup 1s  normal ease-out; }
 
+  @-webkit-keyframes slideup {
+    0% {
+      margin-top: 50px; }
+    100% {
+      margin-top: -150px; } }
+  @keyframes slidedup {
+    0% {
+      margin-top: 50px; }
+    100% {
+      margin-top: -150px; } }
   .main-slider {
-    margin-top: 50px; }
+    margin-top: 50px;
+    position: relative;
+    -webkit-animation: slidedown 1s   normal ease-out;
+    animation: slidedown 1s  normal ease-out; }
     .main-slider p {
       color: lightslategray;
       font-weight: 200;
       font-size: 0.8rem;
       margin-top: 15px; }
 
+  @-webkit-keyframes slidedown {
+    0% {
+      margin-top: -150px; }
+    100% {
+      margin-top: 50px; } }
+  @keyframes slidedown {
+    0% {
+      margin-top: -150px; }
+    100% {
+      margin-top: 50px; } }
   .nav {
     display: none; }
 
